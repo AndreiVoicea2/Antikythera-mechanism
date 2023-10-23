@@ -7,7 +7,7 @@ let int = setInterval(blurring,30)
 
 function blurring(){
 
-     load++
+     load+=3
      
      if(load>99)
      {
