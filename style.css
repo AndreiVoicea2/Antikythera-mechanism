@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+* { 
+     box-sizing: border-box;
+
+
+}
+
+
+
+body{
+    overflow: hidden;
+    margin: 0; 
+    
+} 
+
+.bg{
+ 
+    filter: blur(0px); 
+    background-image: url("BackgroundImage.jpg");
+   
+}
+
+.Content{
+
+
+    font-family: 'Luxurious Roman', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    
+    
+
+}
+
+
+.container{
+
+display: flex;
+width:  90vw;
+
+
+}
+
+
+.panel{
+
+background-size: auto 100%;
+background-position: center;
+background-repeat:  no-repeat;
+height: 70vh;
+border-radius: 50px;
+color: #fff;
+cursor: pointer;
+flex: 0.5;
+margin: 10 px;
+position: relative;
+transition: flex 0.7s ease-in;
+
+}
+
+
+.panel.active{
+
+flex:5;
+
+
+}
+
+@media(max-width: 480px)
+{
+.container{
+
+    width: 100vw;
+}
+
+.panel:nth-of-type(4),.panel:nth-of-type(5)
+{
+display: none;
+
+}
+
+}
